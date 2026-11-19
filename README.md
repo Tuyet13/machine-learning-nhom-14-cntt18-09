@@ -12,7 +12,7 @@ Hai tệp CSV cần có các cột `title` và `text`.
 
 ## Mô hình và quy trình
 
-Chương trình kết hợp tiêu đề và nội dung bài viết, chuẩn hóa văn bản, rồi chia dữ liệu thành tập huấn luyện và kiểm tra theo tỷ lệ 80/20. Văn bản được chuyển thành đặc trưng TF-IDF (tối đa 5.000 đặc trưng, unigram và bigram). Chương trình huấn luyện và so sánh:
+Chương trình loại bỏ dấu nguồn Reuters trong nội dung và lọc các bài trùng lặp trước khi chia dữ liệu thành tập huấn luyện và kiểm tra theo tỷ lệ 80/20. Tiêu đề và nội dung bài viết được kết hợp, chuẩn hóa, rồi chuyển thành đặc trưng TF-IDF (tối đa 5.000 đặc trưng, unigram và bigram). Chương trình huấn luyện và so sánh:
 
 - Multinomial Naive Bayes
 - Logistic Regression
